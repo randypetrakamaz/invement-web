@@ -1,0 +1,12 @@
+.webix_window{
+    border-radius: 20px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+/* ubah border radius input */
+.webix_el_richselect .webix_inp_static, .webix_el_datepicker .webix_inp_static, .webix_el_colorpicker .webix_inp_static {
+    border-radius: 8px;
+}

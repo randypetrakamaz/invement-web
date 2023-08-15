@@ -1,0 +1,25 @@
+body{
+    background-color: #031737;
+}
+
+/* atur ukuran dan warna logo */
+.logo-user{
+    font-size: 70px;
+    color: #3E54AC !important;
+}
+/* garis di bawah logo */
+.bot-border{
+    border-top: 1px solid #3E54AC !important;
+}
+/* container form login berbentuk round  */
+.round{
+    border-radius: 20px;
+}
+
+/* buat round button dan form input */
+.webix_button{
+    border-radius: 8px;
+}
+.webix_el_box input{
+    border-radius: 8px;
+}

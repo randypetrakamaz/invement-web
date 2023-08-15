@@ -1,0 +1,156 @@
+/* *{
+    border: 1px solid black;
+} */
+
+/* Change background sidebar */
+[class*=sidebar-dark-] {
+    background-color: #031737;
+}
+/* Change color font sidebar */
+[class*=sidebar-dark-] .sidebar a {
+    color: #83a8d8;
+}
+/* Change color font sidebar nav-header */
+[class*=sidebar-dark-] .nav-header {
+    /* color: #5d9fe1; */
+    color: #f8f8f8;
+}
+.bg-main-body{
+    background: #eff1f3;
+}
+
+/* Set size logo navbar */
+.fa-regular, .far {
+    font-size: 22px;
+}
+.navbar-badge {
+    font-size: 0.8rem;
+    right: 5px;
+    top: 3px;
+}
+
+/* set color admin */
+.admin-icon{
+    color: #1354aa;
+}
+
+/* set dropdown menu nav admin */
+.dropdown-menu{
+    border-radius: 8px;
+}
+/* Make underline divider */
+.divider-blue{
+    border-top: 1px solid #8badd9;
+    margin: 10px 0 10px 14px;
+    width: 85%;
+}
+/* set border card */
+.card{
+    border-radius: 8px;
+}
+.round{
+    border-radius: 8px;
+}
+
+/* set color brand-text */
+.brand-text{
+    color: white;
+    margin-left: 36px;
+}
+.brand-text:hover{
+    color: rgb(241, 234, 131);
+}
+
+/* Sidenav button hamburger */
+.sidenav-button{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 15px;
+    justify-content: space-between;
+}
+.sidenav-button span{
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    transition: all 0.5s;
+}
+
+/* make 3 strip*/
+.sidenav-button span:first-child{
+    transform-origin: 0 0;
+    transform: rotate(45deg) translate(0px, -1px);
+}
+.sidenav-button span:last-child{
+    transform-origin: 0 100%;
+    transform: rotate(-45deg) translate(0, 1px);
+}
+.sidenav-button span:nth-child(2){
+    transform: scale(0);
+    opacity: 0;
+}
+/* make cross when sidenav button active */
+.active span:first-child{
+    transform-origin: 0 0;
+    transform: translate(0px, -1px);
+}
+.active span:last-child{
+    transform: translate(0, 1px);
+}
+.active span:nth-child(2){
+    transform: scale(1);
+    opacity: 1;
+}
+/* keep hamburger button when width screen small */
+@media screen and (max-width: 991px){
+    .sidenav-button span:first-child{
+        transform-origin: 0 0;
+        transform: translate(0px, -1px);
+    }
+    .sidenav-button span:last-child{
+        transform: translate(0, 1px);
+    }
+    .sidenav-button span:nth-child(2){
+        transform: scale(1);
+        opacity: 1;
+    }    
+}
+
+/* Change size divider when sidebar show logo */
+@media (min-width: 992px){
+    .sidebar-mini.sidebar-collapse .nav-sidebar .divider-blue {
+        /* display: none; */
+        width: 55%;
+    }
+    .sidebar-collapse.sidebar-mini .main-sidebar:hover:not(.hide-nav-header-on-hover) .divider-blue{
+        display: inline-block;
+        width: 85%;
+    }
+    
+}
+
+/* set navbar output when without data shows */
+.sidebar-search-results .list-group>.list-group-item:first-child {
+    margin-top: 3px;
+    border-top: 0;
+    border-radius: 0 0 8px 8px;
+    width: 84%;
+}
+
+/* sidenav active */
+.nav-active{
+    background-color: #3964ae!important;
+    color: #ffffff!important;
+    pointer-events: none;
+    cursor: default;
+}
+
+
+/* atur border radius tombol dan input barang.html */
+.webix_button{
+    border-radius: 8px;
+}
+.webix_el_box input{
+    border-radius: 8px;
+}
